@@ -13,7 +13,7 @@ It adds a run icon on the menu AND the status bar, the command is labeled `loadI
 
 ## Prerequisites
 
-- vscode ^1.51.0
+- vscode ^1.52.0
 
 ## Install
 

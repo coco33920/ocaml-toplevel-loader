@@ -1,10 +1,12 @@
 {
 	"name": "ocaml-toplevel-loader",
+	"publisher": "coco33920",
 	"displayName": "ocaml_toplevel_loader",
 	"description": "A simple and lazy file-to-toplevel loader for OCAML",
 	"version": "0.0.1",
+	"repository": {"url": "https://github.com/coco33920/ocaml-toplevel-loader"},
 	"engines": {
-		"vscode": "^1.51.0"
+		"vscode": "^1.52.0"
 	},
 	"categories": [
 		"Other"
