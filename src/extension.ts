@@ -29,6 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showErrorMessage("Error, you must use a .ml file for this command.")
 			return;
 		}
+		file = file.replace(/[\\]/g, "\\$&")
 		let currentTerminal = vscode.window.activeTerminal;
 		if (currentTerminal === undefined){
 			let terminal = vscode.window.createTerminal('ocamlrun');
