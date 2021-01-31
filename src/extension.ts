@@ -41,9 +41,11 @@ export function activate(context: vscode.ExtensionContext) {
 					}
 					terminal.sendText("#use \"" + file + "\";;")}, 1000)
 			return;
-		}	
+		}
+		let name = currentTerminal.name;
+		let b = name.includes("opam") || name.includes("ocaml")
 		currentTerminal.show()
-		if (currentTerminal.name !== "ocamlrun"){
+		if (!b){
 			currentTerminal.sendText("ocaml");
 			setTimeout(() => {
 				if (currentTerminal === undefined) {
